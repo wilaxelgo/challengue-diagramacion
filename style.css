@@ -1,0 +1,160 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: "Sora", sans-serif;
+  font-size: 62.5%;
+}
+
+:root {
+  --heading: 3.6rem;
+  --body: 2rem;
+  --body2: 1.6rem;
+  --list_item: 1.4rem;
+  --yellow:#F5C044; 
+  --green:#4CA154;
+  --titles:#18181B;
+  --texts:#52525A;
+  --background:#D4D4D8;
+  --background2:#FAFAF9;
+  --background-cards:#FFFFFF;
+}
+
+body {
+  background-color: var(--background2);
+}
+
+.background {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  place-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+
+.reviews {
+  order: 1;
+  margin: 5rem;
+  width: 70rem;
+  height: 50rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.section_reviews-logo {
+  margin: 1rem;
+  margin-bottom: 0.8;
+}
+
+.section_reviews-logo img {
+  width: 4rem;
+  padding: 0.34rem;
+  background-color: #fff6a7;
+  border-radius: 50% ;
+  box-shadow: 0 0 20px 5px rgba(255, 230, 0, 0.7);
+}
+
+.section_reviews-text {
+  margin-left: 1rem;
+}
+
+.section_reviews-text h1 {
+  font-size: var(--heading);
+  margin-bottom: 1rem;
+}
+
+.section_reviews-text p {
+  line-height: 3rem;
+  font-size: var(--body);
+  color: var(--texts);
+  margin-bottom: 3rem;
+}
+
+.section_reviews-list {
+  font-size: var(--list_item);
+  color: var(--texts);
+  margin-left: 4rem;
+}
+
+.section_reviews-list ul {
+  list-style: none;
+}
+
+.section_reviews-list ul li {
+  margin-bottom: 1rem;
+  background: url(https://ju4nr0sas.github.io/TestimonialPage/Resources/Done_ring_round_fill.svg) no-repeat left center;
+  background-size: 2rem;
+  padding-left: 2rem;
+}
+
+
+.cards {
+  order: 2;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 4rem;
+
+
+}
+
+.float-card {
+  border-radius: 1.2rem;
+  width: 40rem;
+  height:20rem;
+  background-color: var(--background-cards);
+  box-shadow: 0 0 1rem 0.5rem rgba(0, 0, 0, 0.1);
+}
+
+.float-card .logo {
+  display: flex;
+}
+
+.float-card .logo .google img, .meta img{
+  margin: 1.3rem 1.8rem 0.5rem 2rem;
+  padding: 1rem;
+  width: 11rem;
+}
+
+.float-card .logo .stars{
+  display: flex;
+
+}
+
+.float-card .logo .stars img{
+  width: 2.3rem;
+}
+
+
+#card-google {
+  grid-column: 2 / span 3;
+}
+
+#card-meta {
+  grid-row-start: 2;
+  grid-column: 1 / span 2;
+}
+
+.card-text {
+  margin-left: 3.5rem;
+}
+
+.card-text h1 {
+  font-size: var(--body2);
+  color: var(--titles);
+  margin-bottom: 1rem;
+}
+
+.card-text p {
+  line-height: 2.5rem;
+  font-size: var(--body2);
+  color: var(--texts);
+}
+html {
+  
+}
